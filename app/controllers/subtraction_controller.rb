@@ -3,7 +3,7 @@ class SubtractionController < ApplicationController
     render({ :template => "subtraction_templates/subtraction_form" })
   end
 
-  def subtract
+  def subtract_these
     @first_number = params.fetch("first_num").to_f
     @second_number = params.fetch("second_num").to_f
 
